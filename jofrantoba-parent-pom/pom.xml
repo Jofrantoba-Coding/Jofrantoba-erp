@@ -9,32 +9,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <version.lombok>1.18.22</version.lombok>
-        <version.apm-agent-attach>1.33.0</version.apm-agent-attach>
-        <version.apm-agent-api>1.33.0</version.apm-agent-api>
-        <version.junit-platform-launcher>1.8.0-M1</version.junit-platform-launcher>
-        <version.junit-jupiter-engine>5.8.0-M1</version.junit-jupiter-engine>
-        <version.junit-vintage-engine>5.8.0-M1</version.junit-vintage-engine>
-        <version.hamcrest-library>2.2</version.hamcrest-library>
-        <version.mockito-all>2.0.2-beta</version.mockito-all>  
-        <version.maven-surefire-plugin>3.0.0-M5</version.maven-surefire-plugin>
+        <version.lombok>1.18.46</version.lombok>
+        <version.junit-platform-launcher>6.0.3</version.junit-platform-launcher>
+        <version.junit-jupiter-engine>6.0.3</version.junit-jupiter-engine>
+        <version.junit-vintage-engine>6.0.3</version.junit-vintage-engine>
+        <version.hamcrest>3.0</version.hamcrest>
+        <version.mockito-core>5.23.0</version.mockito-core>  
+        <version.maven-surefire-plugin>3.5.5</version.maven-surefire-plugin>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${version.lombok}</version>            
-        </dependency>     
-        <dependency>
-            <groupId>co.elastic.apm</groupId>
-            <artifactId>apm-agent-attach</artifactId>
-            <version>${version.apm-agent-attach}</version>
-        </dependency>
-        <dependency>
-            <groupId>co.elastic.apm</groupId>
-            <artifactId>apm-agent-api</artifactId>
-            <version>${version.apm-agent-api}</version>
-        </dependency>           
+        </dependency>               
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
@@ -55,14 +43,14 @@
         </dependency>
         <dependency>
             <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-library</artifactId>
-            <version>${version.hamcrest-library}</version>
+            <artifactId>hamcrest</artifactId>
+            <version>${version.hamcrest}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>${version.mockito-all}</version>     
+            <artifactId>mockito-core</artifactId>
+            <version>${version.mockito-core}</version>     
             <scope>test</scope>
         </dependency>         
     </dependencies>
